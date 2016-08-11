@@ -1,5 +1,7 @@
 <html>
    <head>
+      <title> UBCOMSSA </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" type="text/css" href="tot.css">
       <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
       <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
@@ -7,6 +9,8 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
       <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
       <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+      <link rel="stylesheet" href="materialize.min.css">
+            
    </head>
 <body>
    <!-- The drawer is always open in large screens. The header is always shown,  even in small screens. -->
@@ -28,19 +32,17 @@
             </nav>-->
          </div>
       </header>
-      <div id="navigation" class="mdl-layout__drawer">
-         <span class="mdl-layout-title">Computer Science</span>
+      <div id="navigation" class="mdl-layout__drawer collapsible popout" data-collapsible="accordion">
+         <span class="mdl-layout-title">COMPUTER SCIENCE</span>
          <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="">Home</a>
+            <a class="mdl-navigation__link collapsible-header" href="#me">Home</a>
+            <div id = "me"class="collapsible-body"><p>This is first section.</p></div>
 	    <a class="mdl-navigation__link" href="">Course</a>
 	    <a class="mdl-navigation__link" href="">Forums</a>
             <a class="mdl-navigation__link" href="">About</a>    
          </nav>
       </div>
-	<div for="navigation"class="mdl-tooltip">
-	click for navigation options
-	</div>
-      <main class="mdl-layout__content">
+   <main class="mdl-layout__content">
          <div class="page-content">Hello World!</div>
       </main>
 	<footer class = "mdl-mega-footer">
@@ -49,5 +51,8 @@
 	   </div>
 	</footer>
    </div>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+      <script src="materialize.min.js"></script> 
 </body>
 </html>
